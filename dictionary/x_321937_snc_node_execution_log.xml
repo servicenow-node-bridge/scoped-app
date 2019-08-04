@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Execution Log" max_length="40" name="x_321937_snc_node_execution_log" type="collection">
+        <element dependent="table" dependent_on_field="table" label="Bridge Script" max_length="32" name="bridge_script" type="document_id" use_dependent_field="true"/>
+        <element label="Executed script" max_length="4000" name="executed_script" type="string"/>
+        <element label="Response" max_length="4000" name="response" type="string"/>
+        <element label="Result" max_length="100" name="result" type="string"/>
+        <element label="Table" max_length="100" name="table" type="string"/>
+        <index name="index">
+            <element name="bridge_script"/>
+        </index>
+    </element>
+</database>

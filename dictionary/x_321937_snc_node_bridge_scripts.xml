@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Bridge Scripts" max_length="40" name="x_321937_snc_node_bridge_scripts" type="collection">
+        <element label="Name" max_length="150" name="name" type="string"/>
+        <element hint="Set if this is a native script (without using NodeJS style syntax)" label="Native" max_length="40" name="native" type="boolean"/>
+        <element label="Script" max_length="8000" name="script" type="script"/>
+    </element>
+</database>

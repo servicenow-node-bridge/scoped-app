@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="native" label="Native" language="en" table="x_321937_snc_node_bridge_scripts">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>native</element>
+            <help/>
+            <hint>Set if this is a native script (without using NodeJS style syntax)</hint>
+            <label>Native</label>
+            <language>en</language>
+            <name>x_321937_snc_node_bridge_scripts</name>
+            <plural>Natives</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-03 18:06:02</sys_created_on>
+            <sys_id>ec52bda54f83730045ffa88ca310c744</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Native</sys_name>
+            <sys_package display_value="SNC Node Bridge" source="x_321937_snc_node">3f3bad294f43730045ffa88ca310c7ab</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SNC Node Bridge">3f3bad294f43730045ffa88ca310c7ab</sys_scope>
+            <sys_update_name>sys_documentation_x_321937_snc_node_bridge_scripts_native_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-03 20:50:04</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

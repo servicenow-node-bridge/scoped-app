@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="executed_script" label="Executed script" language="en" table="x_321937_snc_node_execution_log">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>executed_script</element>
+            <help/>
+            <hint/>
+            <label>Executed script</label>
+            <language>en</language>
+            <name>x_321937_snc_node_execution_log</name>
+            <plural>Executed scripts</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-04 07:27:58</sys_created_on>
+            <sys_id>b3d9e4b54f0f730045ffa88ca310c722</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Executed script</sys_name>
+            <sys_package display_value="SNC Node Bridge" source="x_321937_snc_node">3f3bad294f43730045ffa88ca310c7ab</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SNC Node Bridge">3f3bad294f43730045ffa88ca310c7ab</sys_scope>
+            <sys_update_name>sys_documentation_x_321937_snc_node_execution_log_executed_script_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-04 07:27:58</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

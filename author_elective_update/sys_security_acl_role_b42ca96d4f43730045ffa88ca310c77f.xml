@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-03 17:39:01</sys_created_on>
+        <sys_id>b42ca96d4f43730045ffa88ca310c77f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_321937_snc_node_bridge_scripts.x_321937_snc_node.bridge_scripts_user</sys_name>
+        <sys_package display_value="SNC Node Bridge" source="x_321937_snc_node">3f3bad294f43730045ffa88ca310c7ab</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SNC Node Bridge">3f3bad294f43730045ffa88ca310c7ab</sys_scope>
+        <sys_security_acl display_value="x_321937_snc_node_bridge_scripts">f82ca96d4f43730045ffa88ca310c77c</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_b42ca96d4f43730045ffa88ca310c77f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-03 17:39:01</sys_updated_on>
+        <sys_user_role display_value="x_321937_snc_node.bridge_scripts_user" name="x_321937_snc_node.bridge_scripts_user">342ca1694f43730045ffa88ca310c790</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SNC Node Bridge">3f3bad294f43730045ffa88ca310c7ab</application>
+        <file_path/>
+        <instance_id>1c7ba594dba8ff408aea21c40596193b</instance_id>
+        <instance_name>dev77606</instance_name>
+        <name>sys_security_acl_role_b42ca96d4f43730045ffa88ca310c77f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-08-03 17:39:01</sys_created_on><sys_id>b42ca96d4f43730045ffa88ca310c77f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_321937_snc_node_bridge_scripts.x_321937_snc_node.bridge_scripts_user</sys_name><sys_package display_value="SNC Node Bridge" source="x_321937_snc_node">3f3bad294f43730045ffa88ca310c7ab</sys_package><sys_policy/><sys_scope display_value="SNC Node Bridge">3f3bad294f43730045ffa88ca310c7ab</sys_scope><sys_security_acl display_value="x_321937_snc_node_bridge_scripts">f82ca96d4f43730045ffa88ca310c77c</sys_security_acl><sys_update_name>sys_security_acl_role_b42ca96d4f43730045ffa88ca310c77f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-08-03 17:39:01</sys_updated_on><sys_user_role display_value="x_321937_snc_node.bridge_scripts_user" name="x_321937_snc_node.bridge_scripts_user">342ca1694f43730045ffa88ca310c790</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1128863712</payload_hash>
+        <record_name>x_321937_snc_node_bridge_scripts.x_321937_snc_node.bridge_scripts_user</record_name>
+        <reverted_from/>
+        <source>333bad294f43730045ffa88ca310c7ae</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-03 17:39:01</sys_created_on>
+        <sys_id>c92ca96d4f43730045ffa88ca310c781</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16c589036170000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-03 17:39:01</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>052ca96da043730088484f61fdd1dc81</update_guid>
+        <update_guid_history>052ca96da043730088484f61fdd1dc81:-1128863712</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_321937_snc_node_bridge_scripts.x_321937_snc_node.bridge_scripts_user">77cd203d4f0f730045ffa88ca310c736</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-04 07:45:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>536e30d8d97a44608d48e4244b63fa40</sys_id>
+        <sys_metadata>b42ca96d4f43730045ffa88ca310c77f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_321937_snc_node_bridge_scripts.x_321937_snc_node.bridge_scripts_user</sys_name>
+        <sys_package display_value="SNC Node Bridge" source="x_321937_snc_node">3f3bad294f43730045ffa88ca310c7ab</sys_package>
+        <sys_parent display_value="x_321937_snc_node_bridge_scripts">f82ca96d4f43730045ffa88ca310c77c</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SNC Node Bridge">3f3bad294f43730045ffa88ca310c7ab</sys_scope>
+        <sys_scope_delete display_value="">01bd38125c54477ea3537ef972ee28c4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_b42ca96d4f43730045ffa88ca310c77f</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_b42ca96d4f43730045ffa88ca310c77f">c92ca96d4f43730045ffa88ca310c781</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-04 07:45:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
