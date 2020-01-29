@@ -4,43 +4,127 @@
             <element>name</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-08-03 17:40:56</sys_created_on>
-            <sys_id>059ca9ed4f43730045ffa88ca310c76f</sys_id>
+            <sys_created_on>2020-01-18 15:59:32</sys_created_on>
+            <sys_id>2970a6abdbde0010b0ed196c2996197d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_321937_snc_node_bridge_scripts" sys_domain="global" view="Default view">4a6c296d4f43730045ffa88ca310c7c7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-08-03 17:40:56</sys_updated_on>
+            <sys_updated_on>2020-01-18 15:59:32</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>script</element>
+            <element>.begin_split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-08-03 17:40:56</sys_created_on>
-            <sys_id>859ca9ed4f43730045ffa88ca310c76f</sys_id>
+            <sys_created_on>2020-01-18 15:59:32</sys_created_on>
+            <sys_id>a970a6abdbde0010b0ed196c2996197d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_321937_snc_node_bridge_scripts" sys_domain="global" view="Default view">4a6c296d4f43730045ffa88ca310c7c7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-08-03 17:40:56</sys_updated_on>
+            <sys_updated_on>2020-01-18 15:59:32</sys_updated_on>
             <sys_user/>
-            <type/>
+            <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>native</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-08-03 18:06:02</sys_created_on>
-            <sys_id>6452bda54f83730045ffa88ca310c742</sys_id>
+            <sys_created_on>2020-01-18 15:59:32</sys_created_on>
+            <sys_id>2d70a6abdbde0010b0ed196c2996197d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_321937_snc_node_bridge_scripts" sys_domain="global" view="Default view">4a6c296d4f43730045ffa88ca310c7c7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-08-03 18:06:02</sys_updated_on>
+            <sys_updated_on>2020-01-18 15:59:32</sys_updated_on>
             <sys_user/>
             <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-18 15:59:32</sys_created_on>
+            <sys_id>ad70a6abdbde0010b0ed196c2996197d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_321937_snc_node_bridge_scripts" sys_domain="global" view="Default view">4a6c296d4f43730045ffa88ca310c7c7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-18 15:59:32</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-18 15:59:32</sys_created_on>
+            <sys_id>2170a6abdbde0010b0ed196c2996197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_321937_snc_node_bridge_scripts" sys_domain="global" view="Default view">4a6c296d4f43730045ffa88ca310c7c7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-18 15:59:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-18 15:59:32</sys_created_on>
+            <sys_id>a170a6abdbde0010b0ed196c2996197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_321937_snc_node_bridge_scripts" sys_domain="global" view="Default view">4a6c296d4f43730045ffa88ca310c7c7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-18 15:59:32</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>script</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-18 15:59:32</sys_created_on>
+            <sys_id>2570a6abdbde0010b0ed196c2996197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_321937_snc_node_bridge_scripts" sys_domain="global" view="Default view">4a6c296d4f43730045ffa88ca310c7c7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-18 15:59:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>data_bootstrap</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-18 15:59:32</sys_created_on>
+            <sys_id>a570a6abdbde0010b0ed196c2996197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_321937_snc_node_bridge_scripts" sys_domain="global" view="Default view">4a6c296d4f43730045ffa88ca310c7c7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-18 15:59:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_321937_snc_node_cm-editor.xml</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-18 15:59:32</sys_created_on>
+            <sys_id>2970a6abdbde0010b0ed196c2996197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Custom editor">e4e11ad7db520010b0ed196c29961958</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_321937_snc_node_bridge_scripts" sys_domain="global" view="Default view">4a6c296d4f43730045ffa88ca310c7c7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-18 15:59:32</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri>/api/x_321937_snc_node/postback</default_operation_uri>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Result</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // implement resource here
+	var data = request.body.data;
+	gs.info(JSON.stringify(request.body.data));
+	var logSysID = data.logID; // sys_id of the log entry to update
+	var result = data.result; // data to receive back to the servicenow instance
+	
+	if (!logSysID) {
+		response.setBody({"msg": "missing required parameters", "params": {"log_id": logSysID}});
+		return response;
+	}
+	
+	var logEntry = new GlideRecord("x_321937_snc_node_execution_log");
+	if (logEntry.get(logSysID)) {
+		var tmpl = {
+			"result": result
+		};
+		logEntry.response = JSON.stringify(result);
+		logEntry.state = "complete";
+		logEntry.update();
+	} else {
+		response.setBody({"msg": "could not find log entry record"});
+		return response;
+	}
+	
+	response.setBody({"msg": "processed"});
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_321937_snc_node/v1/postback</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-05 18:09:00</sys_created_on>
+        <sys_id>451898eddb210010b0ed196c2996199b</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Result</sys_name>
+        <sys_package display_value="SNC Node Bridge" source="x_321937_snc_node">3f3bad294f43730045ffa88ca310c7ab</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SNC Node Bridge">3f3bad294f43730045ffa88ca310c7ab</sys_scope>
+        <sys_update_name>sys_ws_operation_451898eddb210010b0ed196c2996199b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-17 19:53:08</sys_updated_on>
+        <web_service_definition display_value="Postback">30d794eddb210010b0ed196c299619a8</web_service_definition>
+        <web_service_version display_value="v1">7d8d9c25db610010b0ed196c29961935</web_service_version>
+    </sys_ws_operation>
+</record_update>

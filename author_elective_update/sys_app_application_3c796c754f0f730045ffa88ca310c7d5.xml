@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Execution Log</name>
+        <order>100</order>
+        <roles>x_321937_snc_node.execution_log_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-04 07:26:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3c796c754f0f730045ffa88ca310c7d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Execution Log</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SNC Node Bridge" source="x_321937_snc_node">3f3bad294f43730045ffa88ca310c7ab</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SNC Node Bridge">3f3bad294f43730045ffa88ca310c7ab</sys_scope>
+        <sys_update_name>sys_app_application_3c796c754f0f730045ffa88ca310c7d5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-04 07:26:08</sys_updated_on>
+        <title>Execution Log</title>
+        <view_name/>
+    </sys_app_application>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SNC Node Bridge">3f3bad294f43730045ffa88ca310c7ab</application>
+        <file_path/>
+        <instance_id>a89b4365dbb4bbc052cec59705961966</instance_id>
+        <instance_name>dev80811</instance_name>
+        <name>sys_app_application_3c796c754f0f730045ffa88ca310c7d5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Execution Log</name>
+        <order>100</order>
+        <roles>x_321937_snc_node.execution_log_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-04 07:26:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3c796c754f0f730045ffa88ca310c7d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Execution Log</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SNC Node Bridge" source="x_321937_snc_node">3f3bad294f43730045ffa88ca310c7ab</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SNC Node Bridge">3f3bad294f43730045ffa88ca310c7ab</sys_scope>
+        <sys_update_name>sys_app_application_3c796c754f0f730045ffa88ca310c7d5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-04 07:26:08</sys_updated_on>
+        <title>Execution Log</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>]]></payload>
+        <payload_hash>-1878032039</payload_hash>
+        <record_name>Execution Log</record_name>
+        <reverted_from/>
+        <source>34ab9849db110010b0ed196c2996195a</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-21 18:51:38</sys_created_on>
+        <sys_id>09ab9849db110010b0ed196c299619e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16e8f4e37940000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-21 18:51:38</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>c5ab984988110010c2dc9bec4a0258e0</update_guid>
+        <update_guid_history>c5ab984988110010c2dc9bec4a0258e0:-1878032039</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Execution Log">a77d184ddb110010b0ed196c299619db</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-21 18:59:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>1ea9756ed4e644da9954bf836c149b91</sys_id>
+        <sys_metadata>3c796c754f0f730045ffa88ca310c7d5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Execution Log</sys_name>
+        <sys_package display_value="SNC Node Bridge" source="x_321937_snc_node">3f3bad294f43730045ffa88ca310c7ab</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SNC Node Bridge">3f3bad294f43730045ffa88ca310c7ab</sys_scope>
+        <sys_scope_delete display_value="">01bd38125c54477ea3537ef972ee28c4</sys_scope_delete>
+        <sys_update_name>sys_app_application_3c796c754f0f730045ffa88ca310c7d5</sys_update_name>
+        <sys_update_version display_value="sys_app_application_3c796c754f0f730045ffa88ca310c7d5">09ab9849db110010b0ed196c299619e0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-21 18:59:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

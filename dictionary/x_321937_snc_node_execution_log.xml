@@ -4,6 +4,13 @@
         <element label="Executed script" max_length="4000" name="executed_script" type="string"/>
         <element label="Response" max_length="4000" name="response" type="string"/>
         <element label="Result" max_length="100" name="result" type="string"/>
+        <element choice="1" default="sending" label="State" max_length="40" name="state" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Sending" sequence="10" value="sending"/>
+                <element inactive_on_update="false" label="Processing" sequence="20" value="processing"/>
+                <element inactive_on_update="false" label="Complete" sequence="30" value="complete"/>
+            </choice>
+        </element>
         <element label="Table" max_length="100" name="table" type="string"/>
         <index name="index">
             <element name="bridge_script"/>

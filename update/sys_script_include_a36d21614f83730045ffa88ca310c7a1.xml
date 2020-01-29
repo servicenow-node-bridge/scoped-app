@@ -20,22 +20,38 @@ Utils.prototype = {
         var script = gr.script + "";
 
         var isNative = (gr.getValue("native") == "1") ? true : false;
+		// pre-write log for executed entries
+		var logSysID = this.writeExecutionLog("x_321937_snc_node_bridge_scripts", gr.sys_id + "", script, "", "");
+		// additional payload is sent along with the original request, the key=value structure is being merged
+		var additionalParams = {
+			"log_sys_id": logSysID, // newly written log entry sys_id, for postback
+			"data": this.evaluateDataBootstrap(gr.sys_id + "") // current bridge script sys_id
+		};
         // send the script and get the result
-        var response = this.postScriptExec(script, isNative);
+        var response = this.postScriptExec(script, isNative, additionalParams);
         // parse the resulting JSON response
         response = JSON.parse(response);
-        // write log for executed entries
-		this.writeExecutionLog("x_321937_snc_node_bridge_scripts", gr.sys_id + "", script, response, response.message);
+        
         return response;
     },
     // This method handles the running of the script on the NodeJS instance and getting the response if any available
-    postScriptExec: function(script, isNative) {
+    postScriptExec: function(script, isNative, additionalParams) {
         // this gets the endpoint url from the system properties, it is important to set it
         var endpoint = gs.getProperty("x_321937_snc_node.endpoint");
         var path = isNative ? "process/native" : "process/node";
-        var payload = {
+        
+		// initial payload with the required script to execute
+		var payload = {
             script: script,
         };
+		
+		// iterate through the additional parameters and add them to the payload
+		for(var param in additionalParams) {
+			// let's not overwrite the existing required attributes
+			if (!payload[param]) {
+				payload[param] = additionalParams[param];
+			}
+		}
 
         var request = new sn_ws.RESTMessageV2();
         request.setEndpoint(endpoint + path);
@@ -46,8 +62,21 @@ Utils.prototype = {
 
         var response = request.execute();
 		
+		// update the state of the log entry to processing, since we've got a response from the hosted instance
+		// TODO: Need to make this bulletproof
+		this.updateExecutionState(payload["log_sys_id"], "processing");
+		
         return response.getBody();
     },
+	/**
+     * Writes an entry into the execution log
+     * @param {table} str - The name of the table of the entry for the execution log.
+	 * @param {bridgeScriptSysID} - The sys_id of the bridge script which is executed.
+	 * @param {executed_script} - The script content of the executed script.
+	 * @param {response} - Contains the response body. If running async scripts, this will be empty.
+	 * @param {message} - Contains one of the two values for now success|error. This is manually returned from the VM.
+     * @return {sys_id} SysID of the newly created log entry.
+     */
 	writeExecutionLog: function(table, bridgeScriptSysID, executed_script, response, message) {
 		//https://dev77606.service-now.com/nav_to.do?uri=x_321937_snc_node_execution_log.do?sys_id=597ae0f54f0f730045ffa88ca310c7cc
 		var gr = new GlideRecord("x_321937_snc_node_execution_log");
@@ -55,9 +84,27 @@ Utils.prototype = {
 		gr.bridge_script = bridgeScriptSysID;
 		gr.executed_script = executed_script;
 		gr.table = table;
-		gr.response = JSON.stringify(response);
+		//gr.response = JSON.stringify(response);
 		gr.result = message;
-		gr.insert();
+		return gr.insert();
+	},
+	// evaluates data script and returns result
+	evaluateDataBootstrap: function(scriptID) {
+		var result = null;
+		var gr = new GlideRecord("x_321937_snc_node_bridge_scripts");
+		if (gr.get(scriptID)) {
+			var evaluator = new GlideScopedEvaluator();
+			result = evaluator.evaluateScript(gr, "data_bootstrap");
+		}
+		
+		return result;
+	},
+	updateExecutionState: function(logSysID, state) {
+		var gr = new GlideRecord("x_321937_snc_node_execution_log");
+		if (gr.get(logSysID)) {
+			gr.state = state;
+			gr.update();
+		}
 	},
     type: 'Utils'
 };]]></script>
@@ -65,13 +112,13 @@ Utils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-08-03 17:47:37</sys_created_on>
         <sys_id>a36d21614f83730045ffa88ca310c7a1</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>Utils</sys_name>
         <sys_package display_value="SNC Node Bridge" source="x_321937_snc_node">3f3bad294f43730045ffa88ca310c7ab</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SNC Node Bridge">3f3bad294f43730045ffa88ca310c7ab</sys_scope>
         <sys_update_name>sys_script_include_a36d21614f83730045ffa88ca310c7a1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-08-04 07:58:37</sys_updated_on>
+        <sys_updated_on>2020-01-20 19:24:24</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -42,7 +42,7 @@
         <update_guid_history>fd7fec7d110f7300b5b8da1ecc5ea1e8:-1609496091</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_321937_snc_node_execution_log.x_321937_snc_node.snc_bridge_admin">c300f4bd4f0f730045ffa88ca310c75e</sys_audit_delete>
+        <sys_audit_delete display_value="">c300f4bd4f0f730045ffa88ca310c75e</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-08-04 07:54:58</sys_created_on>

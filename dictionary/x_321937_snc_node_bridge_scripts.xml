@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Bridge Scripts" max_length="40" name="x_321937_snc_node_bridge_scripts" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element default="data = (function() {&#13;&#10;    // write your script here&#13;&#10;    // the ideal way would be to return an array or array of objects at the end&#13;&#10;    // the result will be stringified and sent in a JSON format to the node vm&#13;&#10;    return [];&#13;&#10;})();" hint="This script is executed pre-bridge connection and should return an object or array of objects. This data will be sent along with the request. This is used for data bootstrapping!" label="Data bootstrap" max_length="8000" name="data_bootstrap" type="script"/>
         <element label="Name" max_length="150" name="name" type="string"/>
         <element hint="Set if this is a native script (without using NodeJS style syntax)" label="Native" max_length="40" name="native" type="boolean"/>
-        <element label="Script" max_length="8000" name="script" type="script"/>
+        <element label="Script" max_length="9000" name="script" type="string"/>
     </element>
 </database>
